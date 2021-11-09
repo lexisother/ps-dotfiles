@@ -1,0 +1,76 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "terminal_background": "white",
+    "final_space": true,
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "darkGray",
+                    "properties": {
+                        "prefix": "",
+                        "text": "┌─"
+                    }
+                },
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "properties": {
+                        "user_info_separator": " <b>at</b> ",
+                        "prefix": "",
+                        "user_color": "yellow",
+                        "host_color": "green"
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "yellow",
+                    "properties": {
+                        "prefix": "<white><b>in</b> </>",
+                        "style": "full"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "magenta",
+                    "properties": {
+                        "prefix": "<lightBlue>git:</>",
+                        "branch_icon": ""
+                    }
+                },
+                {
+                    "type": "exit",
+                    "style": "plain",
+                    "foreground": "red",
+                    "properties": {
+                        "display_exit_code": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "darkGray",
+                    "properties": {
+                        "prefix": "",
+                        "text": "└─<green>$</>",
+                        "postfix": ""
+                    }
+                }
+            ]
+        }
+    ]
+}

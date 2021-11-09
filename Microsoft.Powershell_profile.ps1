@@ -16,7 +16,7 @@ ForEach($file in $modules){
 }
 
 # Set my mastrous Dotfiles Powershell theme
-Set-PoshPrompt dotfiles
+Set-PoshPrompt $env:USERPROFILE\Documents\Powershell\Misc\dotfiles.omp.json
 
 # Set up some custom keyhandlers for PSReadLine
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
