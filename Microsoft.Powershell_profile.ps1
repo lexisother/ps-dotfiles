@@ -15,6 +15,17 @@ ForEach($file in $modules){
     _perf_timer_stop $file.Name
 }
 
+# Start registering plugins
+PlugBegin;
+    Plug 'oh-my-posh'
+    Plug 'posh-git'
+    Plug 'Posh-SSH'
+    Plug 'UpdateInstalledModule'
+PlugEnd;
+
+# Install all registered plugins
+PlugInstall;
+
 # Set my mastrous Dotfiles Powershell theme
 Set-PoshPrompt $env:USERPROFILE\Documents\Powershell\Misc\dotfiles.omp.json
 
