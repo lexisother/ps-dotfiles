@@ -21,6 +21,7 @@ PlugBegin;
     Plug 'posh-git'
     Plug 'Posh-SSH'
     Plug 'UpdateInstalledModule'
+    Plug 'git-aliases'
 PlugEnd;
 
 # Install all registered plugins
