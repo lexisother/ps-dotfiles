@@ -11,7 +11,9 @@ foreach ($file in $scripts) {
 $modules = Get-ChildItem -Path "$env:USERPROFILE\Documents\Powershell\Modules"
 ForEach($file in $modules){
     _perf_timer_start $file.Name
-    $file.Name | Import-Module
+    # I disable name checking for imported modules for the git aliases contain
+    # characters which are "illegal" to Powershell
+    $file.Name | Import-Module -DisableNameChecking
     _perf_timer_stop $file.Name
 }
 
